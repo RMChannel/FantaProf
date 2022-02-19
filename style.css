@@ -1,0 +1,106 @@
+body {
+    background-color: beige;
+}
+
+title1 {
+    margin-left: 5px;
+    font-size: 30px;
+    font-family: fantasy;
+    text-align: center;
+}
+
+subtitle {
+    font-size: 20px;
+    font-family: fantasy;
+    margin-left: 10px;
+}
+
+#menu1 {
+    width: max-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu2 {
+    width: max-content;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+subtitle1 {
+    font-size: 20px;
+    font-family: fantasy;
+    margin-left: 10px;
+}
+
+subtitle2 {
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+subtitle3 {
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+.Prof {
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.imgprof {
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.buttonstyle {
+    margin-left:20px;
+    font-size: larger;
+    font-family: fantasy;
+    cursor: pointer;
+}
+
+.crono {
+    font-size: medium;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.container {
+    margin-left: 20%;
+    width: 1400px;
+    height: max-content;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#bonus {
+    border-radius: 17px;
+    width: 40%;
+    height: max-content;
+    background-color: green;
+    text-align: left;
+}
+
+#malus {
+    border-radius: 17px;
+    margin-left: 20px;
+    width: 40%;
+    background-color: red;
+}
+
+punt {
+    background-color: orange;
+}
+
+li {
+    margin-top: 20px;
+}
