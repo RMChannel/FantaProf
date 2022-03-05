@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../common/logomini.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FantaProf | Calculator</title>
+</head>
+<body>
+    <p><img src="../common/logo.png"></p>
+    <a href="../index.html"><img src="../common/button.png" height="30px" width="30px"></a><title1>Punteggio:<span id="punt"></span></title1><br>
+    <subtitle><input type="checkbox" id="capcheck" onclick="control()">Prof Capitano</subtitle>
+    <div class="container">
+        <div id="bonus">
+            <title1>Bonus</title1><br>
+            <subtitle>
+                <ol>
+                    <li><input type="checkbox" id="checkb1" onclick="control()">Assenza (NO SUPLLENZA) <punt>+20</punt></li>
+                    <li><input type="checkbox" id="checkb2" onclick="control()">Relax (NO SPIEGAZIONE) <punt>+15</punt></li>
+                    <li><input type="checkbox" id="checkb3" onclick="control()">Parolaccia <punt>+50</punt></li>
+                    <li><input type="checkbox" id="checkb4" onclick="control()">Scrivere alla lavagna <punt>+15</punt></li>
+                    <li><input type="checkbox" id="checkb5" onclick="control()">Gergo giovanile <punt>+15</punt></li>
+                    <li><input type="checkbox" id="checkb6" onclick="control()">Correzzione compiti <punt>+10</punt></li>
+                    <li><input type="checkbox" id="checkb7" onclick="control()">Sedersi sulla cattedra <punt>+10</punt></li>
+                    <li>Fa un complimento:
+                        <ul>
+                            <li><input type="checkbox" id="checkb8" onclick="control()">Ad un alunno <punt>+50</punt></li>
+                            <li><input type="checkbox" id="checkb9" onclick="control()">Ad un prof <punt>+15</punt></li>
+                        </ul>
+                    </li>
+                    <li><input type="checkbox" id="checkb10" onclick="control()">Malore in classe <punt>+20</punt></li>
+                    <li><input type="checkbox" id="checkb11" onclick="control()">Ci porta in gita <punt>+100</punt></li>
+                    <li><input type="checkbox" id="checkb12" onclick="control()">Inciampa e cade <punt>+250</punt></li>
+                    <li><input type="checkbox" id="checkb13" onclick="control()">Argomento sesso <punt>+50</punt></li>
+                    <li><input type="checkbox" id="checkb14" onclick="control()">Ride alle battute della classe <punt>+10</punt></li>
+                    <li><input type="checkbox" id="checkb15" onclick="control()">Vediamo un film <punt>+15</punt></li>
+                    <li><input type="checkbox" id="checkb16" onclick="control()">Esercitazione nella sua ora <punt>+5</punt></li>
+                    <li><input type="checkbox" id="checkb17" onclick="control()">Andare in bagno <punt>+15</punt></li>
+                    <li><input type="checkbox" id="checkb18" onclick="control()">Spostare compito o interrogazione <punt>+20</punt></li>
+                    <li><input type="checkbox" id="checkb19" onclick="control()">Cambio taglio o colore dei capelli <punt>+30</punt></li>
+                    <li><input type="checkbox" id="checkb20" onclick="control()">Nominare la maturità <punt>+30</punt></li>
+                    <li><input type="checkbox" id="checkb21" onclick="control()">Porta qualcosa da mangiare  alla classe <punt>+200</punt></li>
+                    <li><input type="checkbox" id="checkb22" onclick="control()">Ci porta in laboratorio <punt>+15</punt></li>
+                    <li><input type="checkbox" id="checkb23" onclick="control()">Interrogazione programmata <punt>+15</punt></li>
+                    <li><input type="checkbox" id="checkb24" onclick="control()">Bere acqua in classe <punt>+10</punt></li>
+                    <li><input type="checkbox" id="checkb25" onclick="control()">Lancia oggetti contro alunni <punt>+50</punt></li>
+                    <li><input type="checkbox" id="checkb26" onclick="control()">Usa o risponde al telefono <punt>+20</punt></li>
+                    <li><input type="checkbox" id="checkb27" onclick="control()">Tocca un alunno <punt>+20</punt></li>
+                    <li><input type="checkbox" id="checkb28" onclick="control()">Litiga con un alunno <punt>+50</punt></li>
+                    <li><input type="checkbox" id="checkb29" onclick="control()">Nomina il fantaprof <punt>+25</punt></li>
+                    <li><input type="checkbox" id="checkb30" onclick="control()">Battere la mano sulla cattedra per richiamare l'attenzione <punt>+10</punt></li>
+                    <li><input type="checkbox" id="checkb31" onclick="control()">Buongiorno alla classe <punt>+5</punt></li>
+                </ol>
+            </subtitle>
+        </div>
+        <div id="malus">
+            <title1>Malus</title1><br>
+            <subtitle>
+                <ol>
+                    <li><input type="checkbox" id="checkn1" onclick="control()">Fa ritardo <punt>-20</punt></li>
+                    <li><input type="checkbox" id="checkn2" onclick="control()">Mette una nota <punt>-15</punt></li>
+                    <li><input type="checkbox" id="checkn3" onclick="control()">Apre porta o finestra <punt>-10</punt></li>
+                    <li><input type="checkbox" id="checkn4" onclick="control()">Insulto/Offesa <punt>-25</punt></li>
+                    <li><input type="checkbox" id="checkn5" onclick="control()">Lavoro di gruppo <punt>-15</punt></li>
+                    <li><input type="checkbox" id="checkn6" onclick="control()">Assenze con supplenze <punt>-15</punt></li>
+                    <li><input type="checkbox" id="checkn7" onclick="control()">Cazziatone a classe o alunno <punt>-20</punt></li>
+                    <li><input type="checkbox" id="checkn8" onclick="control()">Battuta da boomer <punt>-10</punt></li>
+                    <li><input type="checkbox" id="checkn9" onclick="control()">Firma sul registro (Compiti/Voti) in orario scolastico <punt>-5</punt></li>
+                    <li><input type="checkbox" id="checkn10" onclick="control()">Caffé da bidello o prof <punt>-10</punt></li>
+                    <li><input type="checkbox" id="checkn11" onclick="control()">Non fa andare in bagno <punt>-5</punt></li>
+                    <li><input type="checkbox" id="checkn12" onclick="control()">Dimentica di portare il libro o i compiti corretti <punt>-10</punt></li>
+                    <li><input type="checkbox" id="checkn13" onclick="control()">Interrogazione a tappeto <punt>-15</punt></li>
+                    <li><input type="checkbox" id="checkn14" onclick="control()">Vestirsi a pois <punt>-5</punt></li>
+                    <li><input type="checkbox" id="checkn15" onclick="control()">Tossire/Soffiarsi il naso <punt>-5</punt></li>
+                    <li><input type="checkbox" id="checkn16" onclick="control()">Ignora telefonata <punt>-10</punt></li>
+                    <li><input type="checkbox" id="checkn17" onclick="control()">Rimprovero di alzare la mascherina <punt>-20</punt></li>
+                    <li><input type="checkbox" id="checkn18" onclick="control()">Vestirsi monocolore (accessori/scarpe escluse) <punt>-20</punt></li>
+                    <li><input type="checkbox" id="checkn19" onclick="control()">Non si ricorda il nome <punt>-10</punt></li>
+                    <li><input type="checkbox" id="checkn20" onclick="control()">Fa cambiare posto <punt>-10</punt></li>
+                    <li><input type="checkbox" id="checkn21" onclick="control()">Poco preavviso per compiti o interrogazioni <punt>-5</punt></li>
+                    <li><input type="checkbox" id="checkn22" onclick="control()">Nominare il covid <punt>-10</punt></li>
+                </ol>
+            </subtitle>
+        </div>
+    </div>
+</body>
+<p class="credits" id="creditm">Sito creato da Cito Roberto e Alessia Sollitto</p>
+<p class="credits">V1.2 | <a href="https://github.com/RMChannel/FantaProf/commits/Main">Changelog</a></p>
+<p class="credits">Copyright 2022-23 | Tutti i diritti riservati</p>
+<script src="script.js"></script>
+</html>
