@@ -28,7 +28,6 @@ checkb27=document.getElementById('checkb27');
 checkb28=document.getElementById('checkb28');
 checkb29=document.getElementById('checkb29');
 checkb31=document.getElementById('checkb30');
-checkb31=document.getElementById('checkb31');
 
 capitano=document.getElementById('capcheck');
 
@@ -40,7 +39,6 @@ checkn5=document.getElementById('checkn5');
 checkn6=document.getElementById('checkn6');
 checkn7=document.getElementById('checkn7');
 checkn8=document.getElementById('checkn8');
-checkn9=document.getElementById('checkn9');
 checkn10=document.getElementById('checkn10');
 checkn11=document.getElementById('checkn11');
 checkn12=document.getElementById('checkn12');
@@ -86,7 +84,7 @@ function control() {
         ris=ris+15;
     }
     if (checkb10.checked) {
-        ris=ris+20;
+        ris=ris+200;
     }
     if (checkb11.checked) {
         ris=ris+100;
@@ -148,9 +146,6 @@ function control() {
     if (checkb30.checked) {
         ris=ris+10;
     }
-    if (checkb31.checked) {
-        ris=ris+5;
-    }
     if (checkn1.checked) {
         neg=neg-20;
     }
@@ -174,9 +169,6 @@ function control() {
     }
     if (checkn8.checked) {
         neg=neg-10;
-    }
-    if (checkn9.checked) {
-        neg=neg-5;
     }
     if (checkn10.checked) {
         neg=neg-10;
